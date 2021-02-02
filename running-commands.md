@@ -18,11 +18,11 @@ Some commands allow you to use flags. They are all optional and most of the time
 Examples:
 
 * `star rewardroles add @Cool People 50 --channel #general`
-* * Add a reward role for \#general
+* * Add a reward role for \#general.
 * `star rewardroles channel #general`
 * * View info about reward roles for \#general.
 * `star rewardroles`
-* * View info ablut reward roles
+* * View info about reward roles.
 
 {% hint style="info" %}
 The above examples utilise the `--channel` flag. Quite a few commands have a channel flag, you can read more about it [here](channel-settings/channel-settings-overview.md).
