@@ -16,7 +16,7 @@
 ## Channel Settings
 
 * [Channel Settings Overview](channel-settings/channel-settings-overview.md)
-* [Creating Channel Settings](channel-settings/creating-channel-settings-1.md)
+* [Creating Channel Settings](channel-settings/creating-channel-settings.md)
 * [Cloning Channel Settings](channel-settings/cloning-channel-settings.md)
 * [Editing Channel Settings](channel-settings/editing-channel-settings.md)
 * [Deleting Channel Settings](channel-settings/deleting-channel-settings.md)
