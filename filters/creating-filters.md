@@ -19,26 +19,28 @@ The options available are:
 * **Required** - whether or not content is required
 * **Minimum** \[number\] - the minimum allowed length of content
 * **Maximum** \[number\] - the maximum allowed length of content
-* **IsReply** - if yes, only allow replies, if no, do not allow replies
+* **IsReply** - if yes, only allow replies, if no, do not allow replies, unset to allow both
 * **Match** \[text/regex\] - text or regex the content must include/match
 * **NotMatch** \[text/regex\] - text or regex the content must not include/match
+* **AutoStar** yes/no - if this filter should apply to only messages being auto starred, or only messages not being auto starred, unset to apply to both 
 
 ### Attachments
 
-* Required
-* Minimum \[number\]
-* Maximum \[number\]
-* MediaRequired
+* **Required** yes/no - whether or not an attachment/embed is required
+* **Minimum** \[number\] - the minimum allowed amont of attachments + embeds
+* **Maximum** \[number\] - the maximum allowed amount of attachments + embeds
+* **MediaRequired** yes/no - whether or not an image/video/gif is required
+* **AutoStar** yes/no - if this filter should apply to only messages being auto starred, or only messages not being auto starred, unset to apply to both 
 
 ### Age
 
-* NewerThan \[time\]
-* OlderThan \[time\]
+* **NewerThan** \[time\] - the maximum age a message can be, e.g. 1w
+* **OlderThan** \[time\] - the minimum age a message can be, e.g. 5m
 
 ### All
 
-* AppliesTo \[list of users/roles\]
-* DoesNotApplyTo \[list of users/roles\]
+* **AppliesTo** \[list of users/roles\] - list of users/roles this filter should apply to
+* **DoesNotApplyTo** \[list of users/roles\] - list of users/roles this filter should not apply to
 
 To create a filter, do `star filters add <content/attachments/age>` followed by options.
 
