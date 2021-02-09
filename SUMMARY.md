@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Starboard](README.md)
-* [What is a Starboard?](what-is-a-starboard.md)
 * [Getting Started](getting-started.md)
 * [Running Commands](running-commands.md)
 * [Changing the Emoji](changing-the-emoji.md)
