@@ -25,4 +25,5 @@
 * [Moderator Starboard](tutorials/moderator-starboard.md)
 * [Multiple Starboards](tutorials/multiple-starboards.md)
 * [Auto Star Channels](tutorials/auto-star-channels.md)
+* [Customising The Starboard Message](tutorials/customising-the-starboard-message.md)
 
