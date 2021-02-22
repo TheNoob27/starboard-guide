@@ -35,7 +35,7 @@ Make sure you either run these commands in any of the channels in the channel se
 
 ### Step 3: Filters
 
-You can read up on filters [here](../filters/untitled.md). A useful filter to create for autostar channels is an [**Attachments**](../filters/creating-filters.md#attachments) ****filter.
+You can read up on filters [here](../filters/filters-overview.md). A useful filter to create for autostar channels is an [**Attachments**](../filters/creating-filters.md#attachments) ****filter.
 
 * If you want only messages with an attachment or link to be autostarred, create a filter with the options `required yes`
 * Else if you want only images, videos, gifs to be autostarred, create a filter with the options `mediaRequired yes`
