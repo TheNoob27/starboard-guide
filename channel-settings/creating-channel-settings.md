@@ -4,29 +4,25 @@ description: How do you create channel settings?
 
 # Creating Channel Settings
 
-It's better to explain an example, let's explain this:
+To create a channel settings group, run `star channelsettings create`, followed by the list of channels you want in the group, and optionally a name.
 
-`star channelsettings create #channel-a #channel-b #channel-c --name "Channel Settings"` 
+For example:
 
-This command will create new channel settings for the channels `#channel-a`, `#channel-b` and `#channel-c`. So these 3 channels will have channel settings, and the rest of the server's channels will have just the server's settings.
+`star channelsettings create Channels #channel-a #channel-b #channel-c`
 
-These channel settings will be named **Channel** **Settings**, because of the `--name "Channel Settings"`.
+This command will create a new group for the channels `#channel-a`, `#channel-b` and `#channel-c`, with the name **Channels**. So these 3 channels will have channel settings, and the rest of the server's channels will just have the server's settings.
 
-{% hint style="info" %}
-If you want a name with spaces, it's necessary to use quotes. You can use quotes with `"`, `'` or `````
-{% endhint %}
+If you want to edit the settings for these channel settings group, do `star changesetting <setting> <value> --channel #channel-a` 
 
-If you want to edit settings for these channel settings, do `star changesetting <setting> <value> --channel #channel-a` 
-
-`#channel-a` can be any one of those channels set, or the name of the channel settings, only if its a name with no spaces.
+`#channel-a` can be any one of those channels in the group, or the name of the channel settings, only if its a name with no spaces. So, `--channel Channels` would also work.
 
 {% hint style="info" %}
-If you run the changesetting command \(or any command that has a --channel flag\) in a channel with channel settings, it will automatically use the channel settings. If you want to change server settings while in those channels, do `star changesetting <...> --channel none`
+If you run the changesetting command \(or any command that has a --channel flag\) in a channel that has channel settings, it will automatically use the channel settings. If you want to change server settings while in those channels, do `star changesetting <...> --channel none`
 {% endhint %}
 
 Most commands that change settings \(changesetting, blacklist, rewardroles, setup, whitelist, etc\) have a `--channel` flag, which changes which settings get changed.
 
-**Here is a list of the changes that will happen for each of those commands:** 
+**Here is a list of the changes that will happen for each of those commands when using the `--channel` flag:** 
 
 * **Changesetting**: You can change settings for channel settings, which will be different to the server's settings and other channel settings.
 * **Blacklist**: You can blacklist users or roles so that they cannot interact with the starboard **in these channels**. If they try to star a message from these channels, their reaction will be removed, even if it was on the starboard message in the starboard channel.
