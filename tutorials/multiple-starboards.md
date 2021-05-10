@@ -14,20 +14,20 @@ You can have up to 10 starboards on one server.
 
 If you want to have a default starboard for the rest of the server's channels, skip this step.
 
-To unset the server's starboard, simply do `star changesettings starboard none`
+To unset the server's starboard, simply do `star changesetting starboard none`
 
 ### Step 2: Grouping Channels
 
-You'll need to start creating channel settings so you can group channels together. You can create a channel settings with `star channelsettings create #channel-a #channel-b --name "Name"`
+You'll need to start creating channel settings so you can group channels together. You can create a channel settings with `star channelsetting create Name #channel-a #channel-b`
 
 * Substitute `#channel-a #channel-b` with a list of whatever channels you want to go to this starboard.
 * **Name** is the name of the channel settings and can be whatever you want, you can remove this if you don't want a name.
 
 ### Step 3: Create Starboard Channel
 
-To create a starboard channel for a group of channels, you need to do this: `star changesetting starboard #starboard --channel #channel-a`
+To set a starboard channel for a group of channels, you need to: `star changesetting starboard #starboard --channel #channel-a`
 
-* `#channel-a` is any of the channels from the channelsettings you've just created. 
+* `#channel-a` is any of the channels from the channelsettings you've just created, or the name if the name has no spaces.
 
 {% hint style="info" %}
 If the bot has the `Manage Channels` permission, you can have the bot create a starboard channel for you by doing `star changesetting starboard create name --channel #channel-a` where `name` is whatever name you want, defaulting to "starboard".
