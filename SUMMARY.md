@@ -3,6 +3,7 @@
 * [Starboard](README.md)
 * [Getting Started](getting-started.md)
 * [Running Commands](running-commands.md)
+* [Changing Settings](changing-settings.md)
 * [Changing the Emoji](changing-the-emoji.md)
 
 ## Filters

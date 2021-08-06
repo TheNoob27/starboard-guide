@@ -10,7 +10,7 @@ The current types of filters are **Content**, **Attachments** and **Age**.
 
 * A **Content** filter limits what type of content can be starred, such as the length of the message, stuff it should include/exclude, and whether or not the message is a reply.
 * An **Attachments** filter limits the attachments and embeds of a message, such as the amount of them or whether or not media \(images, video, gifs etc\) is required.
-* An **Age** filter limits how old/young a message has to be in order to be starred.
+* An **Age** filter limits how old/new a message has to be in order to be starred.
 
 The options available are:
 
@@ -35,7 +35,9 @@ The options available are:
 ### Age
 
 * **NewerThan** \[time\] - the maximum age a message can be, e.g. 1w
+* **SentAfter** \[date\] - a date which the message has to be sent after, e.g. 14/9/2020
 * **OlderThan** \[time\] - the minimum age a message can be, e.g. 5m
+* **SentBefore** \[date\] - a date which the message has to be sent before, e.g. 2022
 
 ### All
 
@@ -43,6 +45,10 @@ The options available are:
 * **DoesNotApplyTo** \[list of users/roles\] - list of users/roles this filter should not apply to
 
 To create a filter, do `star filters add <content/attachments/age>` followed by options.
+
+{% hint style="warning" %}
+You cannot create an age filter with both relative time \(OlderThan/NewerThan\) and static time \(SentBefore/SentAfter\). Instead, you can create two separate age filters.
+{% endhint %}
 
 
 
@@ -54,7 +60,7 @@ To create a filter, do `star filters add <content/attachments/age>` followed by 
 
 `star filters add age newerthan 20d olderthan 10m`
 
-* This creates an age filter that requires the message to be older than 10 minutes but younger than 20 days.
+* This creates a \(relative\) age filter that requires the message to be older than 10 minutes but younger than 20 days.
 
 `star filters add attachments required true mediarequired true`
 
@@ -63,6 +69,10 @@ To create a filter, do `star filters add <content/attachments/age>` followed by 
 `star filters add content match /starboard is a \w+ bot/ notmatch "bad"`
 
 * This creates another content filter that requires the content to match the regex `/starboard is a \w+ bot/` and requires the content to not include `bad`.
+
+`star filters add age sentbefore 14/09/21 sentafter 14/09/20`
+
+* This creates a \(static\) age filter that requires the message to be sent before 14/09/2021 and sent after 14/09/2020.
 
 {% hint style="info" %}
 For the Match \(and NotMatch\) option, you can either provide a /regex/ or text in "quote" marks. If you provide regex, the content must match the regex, if you pass text then the content must include the text. You can test regex on sites like [regexr](https://regexr.com).

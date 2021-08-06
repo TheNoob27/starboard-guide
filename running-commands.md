@@ -1,12 +1,20 @@
+---
+description: Learn the command usages.
+---
+
 # Running Commands
+
+{% hint style="info" %}
+You can view a list of all commands with `star help`.
+{% endhint %}
 
 In command usages, there are various symbols to indicate how to run the command.
 
 #### Example: `star rewardroles (add/remove) ([role]) ([stars]) --channel ([channel])`
 
-* `<>` means the argument is required. The command will not run without this argument \(changesetting being the only exception\).
+* `<>` means the argument is required. The command will not run without this argument.
 * `()` means the argument is optional. It doesn't matter whether or not you provide this argument, the command will still work fine.
-*  `[]` is a placeholder. For example, `[channel]` means provide a channel, being a \#mention, channel name or channel ID. If it is `<[channel]>`, it means you are required to provide a channel, if its `([channel])` it means you can optionally provide a channel.
+* `[]` is a placeholder. For example, `[channel]` means provide a channel, being a \#mention, channel name or channel ID. If it is `<[channel]>`, it means you are required to provide a channel, if its `([channel])` it means you can optionally provide a channel.
 * `--` is for [flags](running-commands.md#flags). Flags are always optional, and can be used anywhere in the message.
 * If there's a `/`, it means you can provide one of those options. For example, `(first/second/third/[number])` means \(optionally\) provide either `first`, `second`, `third` or a number.
 * `...` indicates you can provide more than one. `(...[channels])` means you can provide multiple channels.
