@@ -42,6 +42,6 @@ You can edit the settings for each group of channels by running the changesettin
 {% endhint %}
 
 {% hint style="success" %}
-You should have multiple starboards now, one for a group a channels, one for another group, etc.
+You should have multiple starboards now, one for a group of channels, one for another group, etc.
 {% endhint %}
 
