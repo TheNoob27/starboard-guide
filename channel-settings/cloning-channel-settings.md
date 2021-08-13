@@ -15,6 +15,6 @@ If you want to make channel settings from scratch, you have to input `--channel 
 {% endhint %}
 
 {% hint style="warning" %}
-If you clone channel settings, it doesn't mean that if the clone will update when you update the original.
+If you clone channel settings, it doesn't mean that the clone will update when you update the original.
 {% endhint %}
 
