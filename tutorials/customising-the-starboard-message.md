@@ -12,7 +12,7 @@ Above is an example of what a starboard message can look like. Everything highli
 
 ## Requirements
 
-First, we have to tell you about the Requirements setting. This determines when the second, third and fourth star and colour show up. By default, the requirements are as followed:
+First, we have to tell you about the Requirements setting. This determines when the second, third and fourth star and colour show up. By default, the requirements are as following:
 
 * First: 10 stars
 * Second: 20 stars
@@ -48,7 +48,7 @@ When changing the colour, you can input something along the lines of `#abc`, `#a
 
 You have the option for each starboard message to ping the author of the starred message. This is disabled by default.
 
-To enable this, do `star changesetting mention yes`
+To enable this, do `star changesetting mentionauthor yes`
 
 ## Show The Nickname
 
@@ -71,6 +71,6 @@ You have the option for the bot to send all media as attachments instead of simp
 
 
 {% hint style="success" %}
-And thats it! This is all possible ways of customising the embed. There could be more to come soon!
+And that's it! This is all possible ways of customising the embed. There could be more to come soon!
 {% endhint %}
 
