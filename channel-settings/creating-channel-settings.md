@@ -14,7 +14,7 @@ This command will create a new group for the channels `#channel-a`, `#channel-b`
 
 If you want to edit the settings for these channel settings group, do `star changesetting <setting> <value> --channel #channel-a` 
 
-`#channel-a` can be any one of those channels in the group, or the name of the channel settings, only if its a name with no spaces. So, `--channel Channels` would also work.
+`#channel-a` can be any one of those channels in the group, or the name of the channel settings, only if it's a name with no spaces. So, `--channel Channels` would also work.
 
 {% hint style="info" %}
 If you run the changesetting command \(or any command that has a --channel flag\) in a channel that has channel settings, it will automatically use the channel settings. If you want to change server settings while in those channels, do `star changesetting <...> --channel none`
