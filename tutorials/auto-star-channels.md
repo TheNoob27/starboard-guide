@@ -41,7 +41,7 @@ You can read up on filters [here](../filters/filters-overview.md). A useful filt
 * Or else if you want only images, videos, gifs to be autostarred, create a filter with the options `mediaRequired yes`
 * If you want messages to have a minimum or maximum amount of embeds and attachments, create a filter with the options `min <[number]>` and/or `max <[number]>`
 
-An example of a filter would be `star filters add attachments mediaRequired yes min 2` which creates a filter that requires a image/video/gif and a minimum of 2 embeds/attachments.
+An example of a filter would be `star filters add attachments mediaRequired yes min 2` which creates a filter that requires an image/video/gif and a minimum of 2 embeds/attachments.
 
 {% hint style="info" %}
 If you want to create a filter that only applies to when the message is being auto starred, add `autoStar yes` to the options. If you want one that only applies to when the message isn't being autostarred, add `autoStar no`

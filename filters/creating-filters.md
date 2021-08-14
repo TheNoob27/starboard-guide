@@ -27,7 +27,7 @@ The options available are:
 ### Attachments
 
 * **Required** yes/no - whether or not an attachment/embed is required
-* **Minimum** \[number\] - the minimum allowed amont of attachments + embeds
+* **Minimum** \[number\] - the minimum allowed amount of attachments + embeds
 * **Maximum** \[number\] - the maximum allowed amount of attachments + embeds
 * **MediaRequired** yes/no - whether or not an image/video/gif is required
 * **AutoStar** yes/no - if this filter should apply to only messages being auto starred, or only messages not being auto starred, unset to apply to both 

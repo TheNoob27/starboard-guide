@@ -18,7 +18,7 @@ To unset the server's starboard, simply do `star changesetting starboard none`
 
 ### Step 2: Grouping Channels
 
-You'll need to start creating channel settings so you can group channels together. You can create a channel settings with `star channelsetting create Name #channel-a #channel-b`
+You'll need to start creating channel settings so you can group channels together. You can create a channel settings with `star channelsettings create Name #channel-a #channel-b`
 
 * Substitute `#channel-a #channel-b` with a list of whatever channels you want to go to this starboard.
 * **Name** is the name of the channel settings and can be whatever you want, you can remove this if you don't want a name.
@@ -42,6 +42,6 @@ You can edit the settings for each group of channels by running the changesettin
 {% endhint %}
 
 {% hint style="success" %}
-You should have multiple starboards now, one for a group a channels, one for another group, etc.
+You should have multiple starboards now, one for a group of channels, one for another group, etc.
 {% endhint %}
 

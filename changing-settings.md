@@ -18,9 +18,9 @@ You can set the starboard channel with `star changesetting starboard #starboard`
 
 ### Setting the Required Amount
 
-You can set the amount of stars required to reach the starboard with `star changeseting required <[number]>`.
+You can set the amount of stars required to reach the starboard with `star changesetting required <[number]>`.
 
-At some point a post may lose their stars. We should take posts off the starboard once they fall under a certain amount. You can set this amount with `star changesetting requiredToRemove <[number]>`.
+At some point, a post may lose its stars. We should take posts off the starboard once they fall under a certain amount. You can set this amount with `star changesetting requiredToRemove <[number]>`.
 
 ### Setting Other Settings
 
