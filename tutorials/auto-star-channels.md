@@ -23,8 +23,6 @@ To enable autostarring for these channel settings, you need to enable the **Auto
 Now, every message from these channels will automatically be starred!
 {% endhint %}
 
-
-
 ## Enhancing The AutoStar Experience
 
 These next steps are all optional, they will ensure the auto star channels are of high quality 😁
@@ -35,7 +33,7 @@ Make sure you either run these commands in any of the channels in the channel se
 
 ### Step 3: Filters
 
-You can read up on filters [here](../filters/filters-overview.md). A useful filter to create for autostar channels is an [**Attachments**](../filters/creating-filters.md#attachments) ****filter.
+You can read up on filters [here](../filters/filters-overview.md). A useful filter to create for autostar channels is an [**Attachments**](../filters/creating-filters.md#attachments) filter.
 
 * If you want only messages with an attachment or link to be autostarred, create a filter with the options `required yes`
 * Or else if you want only images, videos, gifs to be autostarred, create a filter with the options `mediaRequired yes`
@@ -55,7 +53,7 @@ You can blacklist users or roles so their messages won't be autostarred if `Filt
 
 ### Step 5: Deleting Invalid Messages
 
-If you **don't** want messages by blacklisted users or messages that don't pass the filters to be deleted, disable the **DeleteInvalid** setting:  `star changesetting deleteInvalid no`
+If you **don't** want messages by blacklisted users or messages that don't pass the filters to be deleted, disable the **DeleteInvalid** setting: `star changesetting deleteInvalid no`
 
 ### Step 6: Disabling Commands
 
@@ -64,6 +62,3 @@ Commands will still be processed in auto star channels, but commands or command 
 {% hint style="success" %}
 That's all! Messages will now be auto starred according to what you've configured in the previous steps.
 {% endhint %}
-
-
-
