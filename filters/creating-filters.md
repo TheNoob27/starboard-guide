@@ -73,7 +73,7 @@ You cannot create an age filter with both relative time (OlderThan/NewerThan) an
 * This creates a (static) age filter that requires the message to be sent before 14/09/2021 and sent after 14/09/2020.
 
 {% hint style="info" %}
-For the Match (and NotMatch) option, you can either provide a /regex/ or text in "quote" marks. If you provide regex, the content must match the regex, if you pass text then the content must include the text. You can test regex on sites like [regex101](https://regex101.com) or [RegExr](https://regexr.com).
+For the Match (and NotMatch) option, you can either provide a /regex/ or text in "quote" marks. If you provide regex, the content must match the regex, if you pass text then the content must include the text. You can test regex on sites like [RegExr](https://regexr.com) or [regex101](https://regex101.com).
 {% endhint %}
 
 ### AppliesTo/DoesNotApplyTo
