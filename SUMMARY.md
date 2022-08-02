@@ -28,3 +28,6 @@
 * [Auto Star Channels](tutorials/auto-star-channels.md)
 * [Customising The Starboard Message](tutorials/customising-the-starboard-message.md)
 
+## Legal
+
+* [Privacy](legal/privacy.md)
