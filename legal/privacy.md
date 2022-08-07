@@ -4,7 +4,7 @@ description: Here you can read about what information Starboard stores, and your
 
 # Privacy
 
-Starboard does **not** store information about you or the messages you send, without your permission.
+Starboard does **not** store information about you. Starboard may store data about the messages you send, but only in some cases.
 
 ### Recap - What is Starboard?
 
@@ -22,9 +22,9 @@ User data, member data, roles, reactions, emojis, and of course messages, are in
 
 ### What data does the bot store?
 
-Nothing the bot stores can be traced back to sensitive data - without your consent, the only thing we store are IDs of users, channels and messages. No usernames are stored, no nicknames are stored, the IDs are the only thing used to identify users and messages.
+The main data we _have_ to store are IDs of users, channels, roles and messages. This is necessary for the bot to function in your server. No nicknames are stored and no usernames are stored either - the IDs are the only thing used to identify users, roles, messages, etc.
 
-With your consent, however, you can opt into allowing the bot save messages once they get deleted - this behaviour is enabled by disabling an in-bot setting called **LinkDeletes**. (When enabled - which it is by default - starboard messages will get deleted automatically when the original message it represents is deleted.) When this setting is disabled, messages are **encrypted** and saved for a max of **30** days, in case the layout of the starboard message needs to be changed or resent, or other similar reasons.
+However, by default, when a starred message is deleted, the message is **encrypted** and **saved** to our database for a maximum of **30** days, in case the layout of the starboard message needs to be changed or resent, or a user wants to view the message by ID, or other similar reasons. **This only happens when the deleted message had been starred before deletion, NOT for all messages.** This behaviour is controlled by an in-bot setting called **LinkDeletes** - when enabled, once the original message gets deleted the starboard message will be deleted too. But when the setting is disabled and a message that was starred before is deleted, the starboard message will stay on the starboard, while the deleted message gets saved temporarily.
 
 
 
@@ -35,6 +35,14 @@ By default, only you and your server members can view your messages. But, a serv
 There's also a global servers leaderboard, viewable by running the command **star leaderboard servers** - servers are listed by name. Permission for your server to appear on this leaderboard is determined by the same in-bot setting, **Visible**.
 
 The owner of Starboard will never view your starred messages or information about your server, unless asked for help or given permission to do so.
+
+
+
+### How do I opt-in/opt-out?
+
+You can change most of the in-bot settings listed above with the changesetting command. For example, to enable the **Visible** setting and appear in the **star explore** command, run `star changesetting visible true/false`. You can view all in-bot settings with `star settings`.
+
+You can find the link to this page in the bot by running `star links` or the alias `star privacy`.
 
 
 
