@@ -95,7 +95,7 @@ If you want to select a user or role without mentioning them, just input a part 
 {% endhint %}
 
 {% hint style="success" %}
-If you wish to test a filter, do ~~`star filters test <[messageURL]>`~~
+If you wish to test a filter, do `star filters test <[messageURL]>`
 
 The bot will respond with ✅ if the message passes the filters and can be starred. It'll respond with ❔ if the bot can't find the message. This could mean the bot can't read message history.
 {% endhint %}
