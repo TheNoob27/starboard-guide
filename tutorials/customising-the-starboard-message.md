@@ -6,7 +6,7 @@ description: >-
 
 # Customising The Starboard Message
 
-![Starboard Message Example](../.gitbook/assets/img_3401.jpeg)
+![Starboard Message Example](../.gitbook/assets/starboard.webp)
 
 Above is an example of what a starboard message can look like. Everything highlighted in **red** can be customised in some way. Here's what they are and how to change them.
 
