@@ -58,12 +58,6 @@ If you want the nickname of the author to be shown instead of their Discord tag,
 In the above image, the setting is already enabled.
 {% endhint %}
 
-## Hide Links
-
-If you don't want links to show up on starboard messages, enable the **Clean** setting. This will remove the click to jump to message, reply and reply link if any, and all linked attachments/embeds.
-
-`star changesetting clean yes`
-
 ## Attach Files
 
 You have the option for the bot to send all media as attachments instead of simply links that lead to the attachments. You can do this by enabling the **Attachments** setting: `star changesetting attachments yes`
@@ -71,6 +65,6 @@ You have the option for the bot to send all media as attachments instead of simp
 
 
 {% hint style="success" %}
-And that's it! This is all possible ways of customising the embed. There could be more to come soon!
+And that's it! These are all the possible ways of customising the embed. There could be more to come soon!
 {% endhint %}
 
